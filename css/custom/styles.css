@@ -1,0 +1,50 @@
+/* Botón de whatsApp */
+.botonWhat {
+    position: fixed;
+    top: auto;
+    bottom: 18px;
+    left: 10px;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.avisoAyuda {
+    margin-left: 5px;
+    color: #fff !important;
+    font: 400 15px "Source Sans Pro", sans-serif !important;
+    line-height: normal;
+    background: #4d9ad3;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 170px !important;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px !important;
+    animation: ease-in-out;
+}
+
+.btn-whatsapp {
+    color: white;
+    background-color: #17af4d !important;
+    box-shadow: none !important;
+    border-radius: 200px;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.posicionwhat {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 2.5em;
+}
+
+/* Botón de whatsApp */

@@ -41,9 +41,60 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
+
     </head>
     <body>
+
+        <!-- INICIO MODALES -->
+        <div class="modal fade" tabindex="-1" id="modal-principal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Agendamiento de primera consulta Gratis</h5>
+                  <button type="button" class="bg-transparent border-0 p-0" data-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+					<div class="row">
+						<div class="col-12">
+							<form class="form w-100" action="#" id="form_modal_contact">
+								<div class="row">
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<input class="form-control" name="name" type="text" placeholder="Nombre">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<input class="form-control" name="email" type="email" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<input class="form-control" name="phone" type="text" placeholder="Tel.">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="Asunto">
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<textarea class="form-control" name="message" placeholder="Describe tu consulta..."></textarea>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+                </div>
+                <div class="modal-footer">
+					<button type="submit" form="#form_modal_contact" class="btn btn-sm btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- FIN MODALES -->
 	
 		<!-- Preloader -->
         <div class="preloader">
@@ -60,20 +111,6 @@
             </div>
         </div>
         <!-- End Preloader -->
-		
-		<!-- Get Pro Button -->
-		<ul class="pro-features">
-			<a class="get-pro" href="#">Cotiza</a>
-			<li class="big-title">Solicita una cotización sin compromisos</li>
-			<li class="title">Puedes hacerlo:</li>
-			<li>Llamando al +595 976 988 254</li>
-			<li>Por correo a suppor@mediplus.com</li>
-			<li>Visitando alguna sucursal</li>
-			<div class="button">
-				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Escríbenos</a>
-				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Visítanos</a>
-			</div>
-		</ul>
 	
 		<!-- Header Area -->
 		<header class="header" >
@@ -84,17 +121,13 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="#">Acerca de</a></li>
-								<li><a href="#">Doctores</a></li>
-								<li><a href="#">Contacto</a></li>
-								<li><a href="#">Preguntas Frecuentes</a></li>
+								<li><i class="fa fa-phone"></i>+595 976 988 254</li>
 							</ul>
 							<!-- End Contact -->
 						</div>
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+595 976 988 254</li>
 								<li><i class="fa fa-envelope"></i><a href="mailto:support@mediplus.com">support@mediplus.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -123,24 +156,14 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Inicio <i class="icofont-rounded-down"></i></a>
+											<li class="active"><a href="#">Inicio</a>
+											</li>
+											<li><a href="servicios.html">Servicios </a></li>
+											<li><a href="#">Noticias <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="index.html">Página de Inicio 1</a></li>
+													<li><a href="noticia-detalle.html">Nuevo servicio!</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Doctores </a></li>
-											<li><a href="#">Servicios </a></li>
-											<li><a href="#">Páginas <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="404.html">Error 404</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="blog-single.html">Detalles del Blog</a></li>
-												</ul>
-											</li>
-											<li><a href="contact.html">Contáctanos</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -148,7 +171,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Reserva una Cita</a>
+									<a href="contact.html" class="btn">Contáctanos</a>
 								</div>
 							</div>
 						</div>
@@ -171,8 +194,7 @@
 									<h1>Proveemos Servicios <span>Médicos</span> en los que Puedes <span>Confiar!</span></h1>
 									<p>Obtén atención médica al instante.</p>
 									<div class="button">
-										<a href="#" class="btn">Obtener Cita</a>
-										<a href="#" class="btn primary">Saber Más</a>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#modal-principal">Obtener Cita</button>
 									</div>
 								</div>
 							</div>
@@ -189,8 +211,7 @@
 									<h1>Proveemos Servicios <span>Médicos</span> en los que Puedes <span>Confiar!</span></h1>
 									<p>El mejor servicio, al mejor precio.</p>
 									<div class="button">
-										<a href="#" class="btn">Obtener Cita</a>
-										<a href="#" class="btn primary">Sobre Nosotros</a>
+										<button class="btn btn-primary" data-toggle="modal" data-target="#modal-principal">Obtener Cita</button>
 									</div>
 								</div>
 							</div>
@@ -207,8 +228,7 @@
 									<h1>Proveemos Servicios <span>Médicos</span> en los que Puedes <span>Confiar!</span></h1>
 									<p>Buena salud, al alcance de tus manos.</p>
 									<div class="button">
-										<a href="#" class="btn">Obtener Cita</a>
-										<a href="#" class="btn primary">Contactar Ahora</a>
+										<button class="btn btn-primary" data-toggle="modal" data-target="#modal-principal">Obtener Cita</button>
 									</div>
 								</div>
 							</div>
@@ -236,7 +256,6 @@
 										<span>Atención en</span>
 										<h4>Casos de Emergencia</h4>
 										<p>Poseemos servicios de ambulancia las 24 hs para nuestros asegurados, el beneficio se incluye en todos los planes.</p>
-										<a href="#">SABER MÁS<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -252,7 +271,6 @@
 										<span>Nuestros</span>
 										<h4>Horario de Médicos</h4>
 										<p>Los horarios de atención ambulatoria se limitan, pero las urgencias se atienden las 24 hs.</p>
-										<a href="#">SABER MÁS<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -265,14 +283,13 @@
 										<i class="icofont-ui-clock"></i>
 									</div>
 									<div class="single-content">
-										<span>Nuestros</span>
+										<span>Nuestro</span>
 										<h4>Horario de Atención</h4>
 										<ul class="time-sidual">
 											<li class="day">Lunes - Viernes <span>8:00-20:00</span></li>
 											<li class="day">Sábado <span>9:00-18:30</span></li>
 											<li class="day">Lunes - Jueves <span>9:00-15:00</span></li>
 										</ul>
-										<a href="#">SABER MÁS<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -291,7 +308,7 @@
 						<div class="section-title">
 							<h2>Siempre Estamos Listos para Ayudarte a Ti y a Tu Familia</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Poseemos</p>
 						</div>
 					</div>
 				</div>
@@ -393,9 +410,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Te ofrecemos diferentes servicios para mejorar tu salud</h2>
+							<h2>Años de trayectoria respaldan tu salud</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Somos TOP of MIND en Salud y Atención médica por 10 años consecutivos!</p>
 						</div>
 					</div>
 				</div>
@@ -403,22 +420,22 @@
 					<div class="col-lg-6 col-12">
 						<!-- Start Choose Left -->
 						<div class="choose-left">
-							<h3>Quienes somos?</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo. </p>
-							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+							<h3>Nuestras Instalaciones</h3>
+							<p>Te brindamos la mejor atención con el mejor equipo de tecnología de punta. </p>
+							<p>Comprendemos que la inovación es sinónimo de mejora, por eso nos mantenemos actualizados con el mejor equipo para ofrecerte la solución más eficiente. </p>
 							<div class="row">
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+										<li><i class="fa fa-caret-right"></i>Maquinas Con tecnología de punta. </li>
+										<li><i class="fa fa-caret-right"></i>Mantenimientos mensuales.</li>
+										<li><i class="fa fa-caret-right"></i>Personal Calificado.</li>
 									</ul>
 								</div>
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+										<li><i class="fa fa-caret-right"></i>Pulcritud en cada trabajo realizado. </li>
+										<li><i class="fa fa-caret-right"></i>Salas de espera con zonas de recreación. </li>
+										<li><i class="fa fa-caret-right"></i>Café sin costo adicional. </li>
 									</ul>
 								</div>
 							</div>
@@ -438,7 +455,7 @@
 									</div>
 								</div>
 								<!--/ End Video Animation -->
-								<a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+								<a href="https://www.youtube.com/watch?v=44UMu0ln6Uw" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
 							</div>
 						</div>
 						<!-- End Choose Rights -->
@@ -455,10 +472,9 @@
 					<div class="col-lg-12 col-md-12 col-12">
 						<div class="content">
 							<h2>Necesitas atención médica? llama al +595 976 988 254</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
+							<p>Atención telefónica 24 hs.</p>
 							<div class="button">
 								<a href="#" class="btn">Contáctanos!</a>
-								<a href="#" class="btn second">Más información<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -531,7 +547,7 @@
 						<div class="section-title">
 							<h2>Ofrecemos Diferentes Servicios Para Mejorar Tu Salud</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>El paciente está muy contento de poder satisfacer sus necesidades actuales. precios</p>
+							<p>Cada uno de ellos accesibles con tu subscripción</p>
 						</div>
 					</div>
 				</div>
@@ -541,7 +557,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
 							<h4><a href="service-details.html">Tratamiento general</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>La clínica médica gral está disponible en todas las subscripciones</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -550,7 +566,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-tooth"></i>
 							<h4><a href="service-details.html">Blanqueamiento dental</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Contamos con todos los servicios dentales, entre ellos el blanqueamiento láser. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -559,7 +575,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-heart-alt"></i>
 							<h4><a href="service-details.html">Cirugia del corazón</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>De corazón para tu corazón. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -568,7 +584,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-listening"></i>
 							<h4><a href="service-details.html">Tratamiento de oidos</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Otorrinolaringología especializada para niños y adultos. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -577,7 +593,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-eye-alt"></i>
 							<h4><a href="service-details.html">Problemas de vision</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Contamos con cirugía láser. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -586,7 +602,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-blood"></i>
 							<h4><a href="service-details.html">Transfusión de sangre</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Tambien recibimos donaciones, y sorteamos una subscripcion de 1 mes entre los donantes cada año. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -603,7 +619,7 @@
 						<div class="section-title">
 							<h2>Te ofrecemos el mejor tratamiento a precios razonables</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>adecuados a tu bolsillo</p>
 						</div>
 					</div>
 				</div>
@@ -614,79 +630,88 @@
 							<!-- Table Head -->
 							<div class="table-head">
 								<div class="icon">
-									<i class="icofont icofont-ui-cut"></i>
-								</div>
-								<h4 class="title">Cirugía plástica</h4>
-								<div class="price">
-									<p class="amount">$199<span>/ por persona</span></p>
-								</div>	
-							</div>
-							<!-- Table List -->
-							<ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Nullam interdum enim</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
-							</ul>
-							<div class="table-bottom">
-								<a class="btn" href="#">Agenda Ahora</a>
-							</div>
-							<!-- Table Bottom -->
-						</div>
-					</div>
-					<!-- End Single Table-->
-					<!-- Single Table -->
-					<div class="col-lg-4 col-md-12 col-12">
-						<div class="single-table">
-							<!-- Table Head -->
-							<div class="table-head">
-								<div class="icon">
-									<i class="icofont icofont-tooth"></i>
-								</div>
-								<h4 class="title">Blanqueamiento dental</h4>
-								<div class="price">
-									<p class="amount">$299<span>/ por persona</span></p>
-								</div>	
-							</div>
-							<!-- Table List -->
-							<ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
-							</ul>
-							<div class="table-bottom">
-								<a class="btn" href="#">Agenda Ahora</a>
-							</div>
-							<!-- Table Bottom -->
-						</div>
-					</div>
-					<!-- End Single Table-->
-					<!-- Single Table -->
-					<div class="col-lg-4 col-md-12 col-12">
-						<div class="single-table">
-							<!-- Table Head -->
-							<div class="table-head">
-								<div class="icon">
 									<i class="icofont-heart-beat"></i>
 								</div>
-								<h4 class="title">Cirugía del corazón</h4>
+								<h4 class="title">Plan Básico</h4>
 								<div class="price">
-									<p class="amount">$399<span>/ por persona</span></p>
+									<p class="amount">300.000 Gs<span>/ 1 persona</span></p>
 								</div>	
 							</div>
 							<!-- Table List -->
 							<ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-								<li><i class="icofont icofont-ui-check"></i>Donec ultricies metus</li>
-								<li><i class="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
+								<li><i class="icofont icofont-ui-check"></i>Clinica médica</li>
+								<li><i class="icofont icofont-ui-check"></i>Odontología</li>
+								<li><i class="icofont icofont-ui-check"></i>Urgencias</li>
+								<li><i class="icofont icofont-ui-check"></i>Servicio de ambulancia para el asegurado</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Otorrinolaringología</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Cardiología</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Servicio de ambulancia Familiar</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Quirófano</li>
 							</ul>
 							<div class="table-bottom">
-								<a class="btn" href="#">Agenda Ahora</a>
+								<a class="btn" href="#">Solicitar Ahora</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont-heart-beat text-success"></i>
+								</div>
+								<h4 class="title">Plan Familiar</h4>
+								<div class="price">
+									<p class="amount">800.000 Gs<span>/ Hasta 5 personas</span></p>
+								</div>	
+							</div>
+							<!-- Table List -->
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Clinica médica</li>
+								<li><i class="icofont icofont-ui-check"></i>Odontología</li>
+								<li><i class="icofont icofont-ui-check"></i>Urgencias</li>
+								<li><i class="icofont icofont-ui-check"></i>Servicio de ambulancia para el asegurado</li>
+								<li><i class="icofont icofont-ui-check"></i>Otorrinolaringología</li>
+								<li><i class="icofont icofont-ui-check"></i>Cardiología</li>
+								<li><i class="icofont icofont-ui-check"></i>Servicio de ambulancia Familiar</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Quirófano</li>
+							</ul>
+							<div class="table-bottom">
+								<a class="btn" href="#">Solicitar Ahora</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<div class="icon">
+									<i class="icofont-heart-beat text-warning"></i>
+								</div>
+								<h4 class="title">Plan VIP</h4>
+								<div class="price">
+									<p class="amount">900.000<span>/ Hasta 5 personas</span></p>
+								</div>	
+							</div>
+							<!-- Table List -->
+							<ul class="table-list">
+								<li><i class="icofont icofont-ui-check"></i>Clinica médica</li>
+								<li><i class="icofont icofont-ui-check"></i>Odontología</li>
+								<li><i class="icofont icofont-ui-check"></i>Urgencias</li>
+								<li><i class="icofont icofont-ui-check"></i>Servicio de ambulancia para el asegurado</li>
+								<li><i class="icofont icofont-ui-check"></i>Otorrinolaringología</li>
+								<li><i class="icofont icofont-ui-check"></i>Cardiología</li>
+								<li><i class="icofont icofont-ui-check"></i>Servicio de ambulancia Familiar</li>
+								<li><i class="icofont icofont-ui-check"></i>Quirófano</li>
+							</ul>
+							<div class="table-bottom">
+								<a class="btn" href="#">Solicitar Ahora</a>
 							</div>
 							<!-- Table Bottom -->
 						</div>
@@ -703,9 +728,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Manténgase al día con nuestras noticias médicas más recientes.</h2>
+							<h2>Nuestras noticias médicas más recientes.</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Información actulizada el 12/12/2024</p>
 						</div>
 					</div>
 				</div>
@@ -718,9 +743,9 @@
 							</div>
 							<div class="news-body">
 								<div class="news-content">
-									<div class="date">22 Aug, 2020</div>
-									<h2><a href="blog-single.html">Hemos anunciado nuestro nuevo producto.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<div class="date">12 Dic, 2024</div>
+									<h2><a href="blog-single.html">Hemos anunciado nuestro nuevo servicio.</a></h2>
+									<p class="text">A pedido de los asegurados, decidimos....</p>
 								</div>
 							</div>
 						</div>
@@ -734,9 +759,9 @@
 							</div>
 							<div class="news-body">
 								<div class="news-content">
-									<div class="date">15 Jul, 2020</div>
-									<h2><a href="blog-single.html">Las cinco mejores formas de solucionar problemas dentales.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<div class="date">15 Ago, 2024</div>
+									<h2><a href="blog-single.html">Las cinco mejores formas de prevenir molestias dentales.</a></h2>
+									<p class="text">Es sabido que los dolores dentales son un fastidio...</p>
 								</div>
 							</div>
 						</div>
@@ -750,9 +775,9 @@
 							</div>
 							<div class="news-body">
 								<div class="news-content">
-									<div class="date">05 Jan, 2020</div>
-									<h2><a href="blog-single.html">Ofrecemos soluciones altamente comerciales.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<div class="date">01 Ago, 2020</div>
+									<h2><a href="blog-single.html">Nueva sucursal habilitada!.</a></h2>
+									<p class="text">Nos complace informarles que habilitamos...</p>
 								</div>
 							</div>
 						</div>
@@ -809,9 +834,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
-							<h2>Siempre estamos listos para ayudarte. Reserva una cita</h2>
+							<h2>Siempre estamos listos para ayudarte. Contáctenos!</h2>
 							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Su consulta no molesta, pregunte, nosotros lo asesoraremos!</p>
 						</div>
 					</div>
 				</div>
@@ -821,7 +846,7 @@
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="name" type="text" placeholder="Name">
+										<input name="name" type="text" placeholder="Nombre">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
@@ -831,42 +856,17 @@
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<input name="phone" type="text" placeholder="Phone">
+										<input name="phone" type="text" placeholder="Tel.">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
 									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current">Department</span>
-											<ul class="list">
-												<li data-value="1" class="option selected ">Department</li>
-												<li data-value="2" class="option">Cardiac Clinic</li>
-												<li data-value="3" class="option">Neurology</li>
-												<li data-value="4" class="option">Dentistry</li>
-												<li data-value="5" class="option">Gastroenterology</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<div class="nice-select form-control wide" tabindex="0"><span class="current">Doctor</span>
-											<ul class="list">
-												<li data-value="1" class="option selected ">Doctor</li>
-												<li data-value="2" class="option">Dr. Akther Hossain</li>
-												<li data-value="3" class="option">Dr. Dery Alex</li>
-												<li data-value="4" class="option">Dr. Jovis Karon</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input type="text" placeholder="Date" id="datepicker">
+										<input type="text" placeholder="Asunto">
 									</div>
 								</div>
 								<div class="col-lg-12 col-md-12 col-12">
 									<div class="form-group">
-										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+										<textarea name="message" placeholder="Describe tu consulta..."></textarea>
 									</div>
 								</div>
 							</div>
@@ -874,12 +874,12 @@
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn">Agenda una cita</button>
+											<button type="submit" class="btn">Enviar mensaje</button>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-7 col-md-8 col-12">
-									<p>( Te confirmaremos por mensaje de texto )</p>
+									<p>( Te responderemos por email o mensaje de texto )</p>
 								</div>
 							</div>
 						</form>
@@ -902,7 +902,7 @@
 						<!-- Start Newsletter Form -->
 						<div class="subscribe-text ">
 							<h6>Regístrate para recibir noticias</h6>
-							<p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
+							<p class="">No tiene costo y recibirás un correo cuando<br> publiquemos algo nuevo.</p>
 						</div>
 						<!-- End Newsletter Form -->
 					</div>
@@ -931,7 +931,7 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Más sobre nosotros</h2>
-								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
+								<p>Sigunos en nuestras redes sociales.</p>
 								<!-- Social -->
 								<ul class="social">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -971,7 +971,6 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Horarios de atención</h2>
-								<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
 								<ul class="time-sidual">
 									<li class="day">Lunes - Viernes <span>08:00-20:00</span></li>
 									<li class="day">Sábados <span>9.00-18.30</span></li>
@@ -982,7 +981,10 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Noticias</h2>
-								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<p>
+									Regístrate para recibir noticias, No tiene costo y recibirás un correo cuando publiquemos algo nuevo.
+
+								</p>
 								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
 									<input name="email" placeholder="Email" class="common-input" onfocus="this.placeholder = ''"
 										onblur="this.placeholder = 'tu email'" required="" type="email">
@@ -1050,5 +1052,9 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+		<!-- custom -->
+		<link rel="stylesheet" href="css/custom/styles.css">
+		<script src="js/custom/script.js"></script>
+		<script src="js/pages/index.js"></script>
     </body>
 </html>
